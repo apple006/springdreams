@@ -1,0 +1,1062 @@
+2016-08-15 13:41:36 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 13:41:36 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 13:41:36 IST 2016]; root of context hierarchy
+2016-08-15 13:41:36 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 13:41:37 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 13:41:37 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 13:41:38 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 13:41:38 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 13:41:38 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 13:41:38 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 13:41:38 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 13:41:38 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 13:41:38 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 13:41:39 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 13:41:40 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 13:41:40 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 13:41:40 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 13:41:40 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 13:41:40 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@6af87130] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 13:41:41 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d8bd881, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b511e61, org.springframework.security.web.header.HeaderWriterFilter@495e8a3, org.springframework.security.web.csrf.CsrfFilter@3c9ef37b, org.springframework.security.web.authentication.logout.LogoutFilter@103478b8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71418a4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c6919ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3063be68, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@69d021c1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@731ab49b, org.springframework.security.web.session.SessionManagementFilter@6eded11a, org.springframework.security.web.access.ExceptionTranslationFilter@3cf70afa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1fba3fd6]
+2016-08-15 13:41:41 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 13:41:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 13:41:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 13:41:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 13:41:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 13:41:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 13:41:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 13:41:42 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 13:41:42 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 13:41:36 IST 2016]; root of context hierarchy
+2016-08-15 13:41:42 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 13:41:42 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 13:41:42 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@16c8e9b8.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471248702718.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 13:41:42 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 6520 ms
+2016-08-15 13:41:43 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 13:41:43 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 13:41:43 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 13:41:43 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 13:41:43 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 114 ms
+2016-08-15 13:41:44 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 13:44:28 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 13:41:43 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 13:44:28 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 13:41:36 IST 2016]; root of context hierarchy
+2016-08-15 13:44:28 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
+2016-08-15 13:44:46 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 13:44:46 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 13:44:46 IST 2016]; root of context hierarchy
+2016-08-15 13:44:46 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 13:44:46 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 13:44:47 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 13:44:47 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 13:44:47 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 13:44:47 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 13:44:47 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 13:44:48 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 13:44:48 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 13:44:48 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 13:44:48 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 13:44:48 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 13:44:48 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 13:44:48 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 13:44:48 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 13:44:49 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@2a39aa2b] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 13:44:49 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@407b8435, org.springframework.security.web.context.SecurityContextPersistenceFilter@2becfd4c, org.springframework.security.web.header.HeaderWriterFilter@6f15f52a, org.springframework.security.web.csrf.CsrfFilter@4d81e83a, org.springframework.security.web.authentication.logout.LogoutFilter@5d2a86c0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@69f080ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cc8d70d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@682e445e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@37314843, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1282e98, org.springframework.security.web.session.SessionManagementFilter@341c6ac2, org.springframework.security.web.access.ExceptionTranslationFilter@31881aa2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c97721b]
+2016-08-15 13:44:49 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 13:44:49 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 13:44:49 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 13:44:49 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 13:44:49 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 13:44:49 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 13:44:49 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 13:44:50 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 13:44:46 IST 2016]; root of context hierarchy
+2016-08-15 13:44:50 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 13:44:50 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 13:44:50 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@8f39224.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471248890296.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 13:44:50 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 4115 ms
+2016-08-15 13:44:50 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 13:44:50 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 13:44:50 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 13:44:50 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 13:44:50 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 54 ms
+2016-08-15 13:44:50 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 13:44:52 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 13:44:54 INFO  UserDaoImpl:29 - jaison reached in findUserList
+2016-08-15 13:45:14 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 13:44:50 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 13:45:14 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 13:44:46 IST 2016]; root of context hierarchy
+2016-08-15 13:45:14 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
+2016-08-15 18:53:25 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 18:53:25 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 18:53:25 IST 2016]; root of context hierarchy
+2016-08-15 18:53:26 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 18:53:27 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 18:53:28 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 18:53:28 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 18:53:28 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 18:53:28 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 18:53:28 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 18:53:34 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 18:53:34 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 18:53:34 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 18:53:34 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 18:53:34 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 18:53:34 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 18:53:34 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 18:53:34 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 18:53:35 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@8f57e4c] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 18:53:36 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@792e8181, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dddfc35, org.springframework.security.web.header.HeaderWriterFilter@13b29b34, org.springframework.security.web.csrf.CsrfFilter@1cb849b2, org.springframework.security.web.authentication.logout.LogoutFilter@6c1e40d9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5aac6f9f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6106dfb6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b8cf049, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@38848217, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@511d5e6e, org.springframework.security.web.session.SessionManagementFilter@46994f26, org.springframework.security.web.access.ExceptionTranslationFilter@590dea35, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a65e237]
+2016-08-15 18:53:36 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 18:53:36 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 18:53:36 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 18:53:36 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 18:53:36 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 18:53:36 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 18:53:36 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 18:53:36 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 18:53:36 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 18:53:25 IST 2016]; root of context hierarchy
+2016-08-15 18:53:37 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 18:53:37 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 18:53:37 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@5615f82d.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471267417072.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 18:53:37 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 11323 ms
+2016-08-15 18:53:37 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 18:53:37 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 18:53:37 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 18:53:37 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 18:53:37 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 50 ms
+2016-08-15 18:54:30 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 18:54:31 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 18:54:30 IST 2016]; root of context hierarchy
+2016-08-15 18:54:31 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 18:54:31 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 18:54:32 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 18:54:32 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 18:54:32 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 18:54:32 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 18:54:32 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 18:54:33 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 18:54:33 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 18:54:33 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 18:54:33 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 18:54:33 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 18:54:33 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 18:54:33 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 18:54:33 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 18:54:33 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@5ebffb44] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 18:54:34 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@120df990, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b79c8ff, org.springframework.security.web.header.HeaderWriterFilter@6206b4a7, org.springframework.security.web.csrf.CsrfFilter@9a9aa68, org.springframework.security.web.authentication.logout.LogoutFilter@283ab206, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3db6dd52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66756662, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25ad25f5, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@23ad2d17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b506ed0, org.springframework.security.web.session.SessionManagementFilter@5c1b89ac, org.springframework.security.web.access.ExceptionTranslationFilter@7d25913, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44fd7ba4]
+2016-08-15 18:54:35 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 18:54:35 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 18:54:35 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 18:54:35 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 18:54:35 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 18:54:35 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 18:54:35 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 18:54:35 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 18:54:35 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 18:54:30 IST 2016]; root of context hierarchy
+2016-08-15 18:54:35 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 18:54:35 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 18:54:35 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@71b26880.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471267475792.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 18:54:35 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 4924 ms
+2016-08-15 18:54:35 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 18:54:35 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 18:54:35 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 18:54:35 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 18:54:36 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 70 ms
+2016-08-15 18:54:37 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 18:54:54 INFO  UserDaoImpl:29 - jaison reached in findUserList
+2016-08-15 18:54:56 WARN  PageNotFound:1147 - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'dispatcher'
+2016-08-15 19:09:55 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 18:54:35 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:09:55 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 18:54:30 IST 2016]; root of context hierarchy
+2016-08-15 19:09:55 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
+2016-08-15 19:10:10 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 19:10:10 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 19:10:10 IST 2016]; root of context hierarchy
+2016-08-15 19:10:10 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 19:10:11 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:10:11 WARN  AnnotationConfigWebApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.dao [Xlint:invalidAbsoluteTypeName]
+2016-08-15 19:10:11 ERROR ContextLoader:351 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.dao [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:776)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:800)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:444)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:791)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:294)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1349)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.startWebapp(JettyWebAppContext.java:296)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1342)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:505)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:365)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:163)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:387)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:354)
+	at org.eclipse.jetty.maven.plugin.JettyServer.doStart(JettyServer.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:534)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:357)
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.execute(JettyRunMojo.java:167)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.dao [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 62 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.dao [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 83 more
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.dao [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:207)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:193)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:170)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:118)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:88)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:69)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	... 105 more
+2016-08-15 19:23:42 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 19:23:42 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 19:23:42 IST 2016]; root of context hierarchy
+2016-08-15 19:23:42 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 19:23:43 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:23:44 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 19:23:44 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 19:23:44 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 19:23:44 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 19:23:44 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 19:23:46 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 19:23:46 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 19:23:46 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 19:23:46 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:23:46 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 19:23:46 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 19:23:46 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 19:23:46 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 19:23:47 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@34d713a2] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 19:23:47 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d43a1b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@638afcaa, org.springframework.security.web.header.HeaderWriterFilter@394a6d2b, org.springframework.security.web.csrf.CsrfFilter@27358a19, org.springframework.security.web.authentication.logout.LogoutFilter@610fbe1c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4ff66917, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62735b13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6eede35e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@67e77f52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b14f482, org.springframework.security.web.session.SessionManagementFilter@55adcf9e, org.springframework.security.web.access.ExceptionTranslationFilter@5c70d7f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b476233]
+2016-08-15 19:23:47 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 19:23:47 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 19:23:47 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 19:23:47 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 19:23:47 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 19:23:47 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 19:23:48 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 19:23:48 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 19:23:42 IST 2016]; root of context hierarchy
+2016-08-15 19:23:48 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 19:23:48 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:23:48 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@47eaf55c.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471269228430.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 19:23:48 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 5725 ms
+2016-08-15 19:23:48 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 19:23:48 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:23:48 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:23:48 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:23:48 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 70 ms
+2016-08-15 19:23:52 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:23:52 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:26:39 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:23:48 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:26:39 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 19:23:42 IST 2016]; root of context hierarchy
+2016-08-15 19:26:39 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
+2016-08-15 19:26:54 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 19:26:54 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 19:26:54 IST 2016]; root of context hierarchy
+2016-08-15 19:26:54 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 19:26:55 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:26:56 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 19:26:56 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 19:26:56 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 19:26:56 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 19:26:56 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 19:26:57 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 19:26:57 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 19:26:57 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 19:26:57 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:26:57 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 19:26:57 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 19:26:57 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 19:26:57 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 19:26:58 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@34d713a2] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 19:26:58 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d43a1b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@638afcaa, org.springframework.security.web.header.HeaderWriterFilter@394a6d2b, org.springframework.security.web.csrf.CsrfFilter@27358a19, org.springframework.security.web.authentication.logout.LogoutFilter@610fbe1c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4ff66917, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62735b13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6eede35e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@67e77f52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b14f482, org.springframework.security.web.session.SessionManagementFilter@55adcf9e, org.springframework.security.web.access.ExceptionTranslationFilter@5c70d7f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b476233]
+2016-08-15 19:26:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 19:26:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 19:26:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 19:26:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 19:26:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 19:26:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 19:26:59 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 19:26:59 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 19:26:54 IST 2016]; root of context hierarchy
+2016-08-15 19:26:59 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 19:26:59 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:26:59 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@54b44879.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471269419514.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 19:26:59 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 5071 ms
+2016-08-15 19:26:59 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:26:59 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 19:26:59 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:26:59 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:26:59 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:26:59 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 51 ms
+2016-08-15 19:27:01 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:27:06 INFO  UserDaoImpl:29 - jaison reached in findUserList
+2016-08-15 19:31:47 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:26:59 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:31:47 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 19:26:54 IST 2016]; root of context hierarchy
+2016-08-15 19:31:47 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
+2016-08-15 19:31:59 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 19:31:59 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 19:31:59 IST 2016]; root of context hierarchy
+2016-08-15 19:31:59 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 19:31:59 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:31:59 WARN  AnnotationConfigWebApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.service [Xlint:invalidAbsoluteTypeName]
+2016-08-15 19:31:59 ERROR ContextLoader:351 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.service [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:776)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:800)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:444)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:791)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:294)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1349)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.startWebapp(JettyWebAppContext.java:296)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1342)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:505)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:365)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:163)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:387)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:354)
+	at org.eclipse.jetty.maven.plugin.JettyServer.doStart(JettyServer.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:534)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:357)
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.execute(JettyRunMojo.java:167)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.service [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 62 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.service [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 83 more
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.service [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:207)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:193)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:170)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:118)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:88)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:69)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	... 105 more
+2016-08-15 19:43:11 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 19:43:11 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 19:43:11 IST 2016]; root of context hierarchy
+2016-08-15 19:43:11 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 19:43:11 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:43:11 WARN  AnnotationConfigWebApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+2016-08-15 19:43:11 ERROR ContextLoader:351 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:776)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:800)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:444)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:791)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:294)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1349)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.startWebapp(JettyWebAppContext.java:296)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1342)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:505)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:365)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:163)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:387)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:354)
+	at org.eclipse.jetty.maven.plugin.JettyServer.doStart(JettyServer.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:534)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:357)
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.execute(JettyRunMojo.java:167)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 62 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 83 more
+Caused by: java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.maybeBindProceedingJoinPoint(AbstractAspectJAdvice.java:405)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:377)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:277)
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:160)
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:106)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:186)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:111)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:87)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 104 more
+2016-08-15 19:45:08 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 19:45:08 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 19:45:08 IST 2016]; root of context hierarchy
+2016-08-15 19:45:08 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 19:45:09 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:45:10 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 19:45:10 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 19:45:10 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 19:45:10 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 19:45:10 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 19:45:11 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 19:45:11 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 19:45:11 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 19:45:11 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:45:11 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 19:45:11 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 19:45:11 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 19:45:11 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 19:45:12 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@233db8e9] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 19:45:12 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11bfffb3, org.springframework.security.web.context.SecurityContextPersistenceFilter@3214bad, org.springframework.security.web.header.HeaderWriterFilter@2c99c8d, org.springframework.security.web.csrf.CsrfFilter@52f9e8bb, org.springframework.security.web.authentication.logout.LogoutFilter@3ca17943, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@610fbe1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f95d64d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45984654, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5773d271, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a7a1a0d, org.springframework.security.web.session.SessionManagementFilter@365cef67, org.springframework.security.web.access.ExceptionTranslationFilter@4aa22cc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58601e7a]
+2016-08-15 19:45:13 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 19:45:13 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 19:45:13 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 19:45:13 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 19:45:13 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 19:45:13 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 19:45:13 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 19:45:13 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 19:45:08 IST 2016]; root of context hierarchy
+2016-08-15 19:45:13 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 19:45:13 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:45:13 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@1d77746b.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471270513713.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 19:45:13 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 5182 ms
+2016-08-15 19:45:13 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 19:45:13 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:45:13 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:45:13 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:45:13 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 65 ms
+2016-08-15 19:45:18 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:45:18 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:45:22 INFO  UserDaoImpl:29 - jaison reached in findUserList
+2016-08-15 19:49:33 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:45:13 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:49:33 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 19:45:08 IST 2016]; root of context hierarchy
+2016-08-15 19:49:33 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
+2016-08-15 19:49:45 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 19:49:45 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 19:49:45 IST 2016]; root of context hierarchy
+2016-08-15 19:49:45 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 19:49:46 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:49:46 WARN  AnnotationConfigWebApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.service [Xlint:invalidAbsoluteTypeName]
+2016-08-15 19:49:46 ERROR ContextLoader:351 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.service [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:776)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:800)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:444)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:791)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:294)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1349)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.startWebapp(JettyWebAppContext.java:296)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1342)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:505)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:365)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:163)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:387)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:354)
+	at org.eclipse.jetty.maven.plugin.JettyServer.doStart(JettyServer.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:534)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:357)
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.execute(JettyRunMojo.java:167)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.service [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 62 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.service [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 83 more
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.springDreamsProj.service [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:207)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:193)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:170)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:118)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:88)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:69)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	... 105 more
+2016-08-15 19:51:44 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 19:51:44 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 19:51:44 IST 2016]; root of context hierarchy
+2016-08-15 19:51:44 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 19:51:45 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:51:46 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 19:51:46 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 19:51:46 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 19:51:46 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 19:51:46 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 19:51:47 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 19:51:47 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 19:51:47 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 19:51:47 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:51:47 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 19:51:47 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 19:51:47 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 19:51:47 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 19:51:48 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@35ef439e] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 19:51:48 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@538b3c88, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d5d3a5c, org.springframework.security.web.header.HeaderWriterFilter@60928a61, org.springframework.security.web.csrf.CsrfFilter@3d40498a, org.springframework.security.web.authentication.logout.LogoutFilter@6e8f2094, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15994b0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e18ced7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a0896b3, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@698d6d30, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19b9f903, org.springframework.security.web.session.SessionManagementFilter@8077c97, org.springframework.security.web.access.ExceptionTranslationFilter@65844c96, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@38f617f4]
+2016-08-15 19:51:48 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 19:51:48 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 19:51:48 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 19:51:48 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 19:51:48 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 19:51:48 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 19:51:49 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 19:51:49 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 19:51:44 IST 2016]; root of context hierarchy
+2016-08-15 19:51:49 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 19:51:49 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:51:49 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@ee2ae9a.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471270909503.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 19:51:49 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 4753 ms
+2016-08-15 19:51:49 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 19:51:49 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:51:49 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:51:49 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:51:49 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 67 ms
+2016-08-15 19:51:49 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:51:51 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:51:57 INFO  UserDaoImpl:29 - jaison reached in findUserList
+2016-08-15 19:55:37 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:51:49 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:55:37 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 19:51:44 IST 2016]; root of context hierarchy
+2016-08-15 19:55:37 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
+2016-08-15 19:55:51 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 19:55:51 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 19:55:51 IST 2016]; root of context hierarchy
+2016-08-15 19:55:51 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 19:55:51 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:55:52 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 19:55:52 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 19:55:52 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 19:55:52 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 19:55:52 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 19:55:53 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 19:55:53 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 19:55:53 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 19:55:53 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:55:54 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 19:55:54 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 19:55:54 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 19:55:54 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 19:55:54 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@7bcecef6] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 19:55:55 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10e56da9, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e18ced7, org.springframework.security.web.header.HeaderWriterFilter@8077c97, org.springframework.security.web.csrf.CsrfFilter@482a58c7, org.springframework.security.web.authentication.logout.LogoutFilter@d108406, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a717d79, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4601047, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54c11750, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3407aa4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28cb86b2, org.springframework.security.web.session.SessionManagementFilter@563317c1, org.springframework.security.web.access.ExceptionTranslationFilter@4e5c8ef3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3dea226b]
+2016-08-15 19:55:55 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 19:55:55 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 19:55:55 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 19:55:55 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 19:55:55 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 19:55:55 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 19:55:55 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 19:55:55 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 19:55:51 IST 2016]; root of context hierarchy
+2016-08-15 19:55:56 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 19:55:56 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:55:56 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@26994c6a.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471271156115.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 19:55:56 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:55:56 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 5048 ms
+2016-08-15 19:55:56 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 19:55:56 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:55:56 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:55:56 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:55:56 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 72 ms
+2016-08-15 19:55:57 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:58:36 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:55:56 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:58:36 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 19:55:51 IST 2016]; root of context hierarchy
+2016-08-15 19:58:36 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
+2016-08-15 19:58:48 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 19:58:48 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 19:58:48 IST 2016]; root of context hierarchy
+2016-08-15 19:58:48 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 19:58:49 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:58:50 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 19:58:50 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 19:58:50 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 19:58:50 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 19:58:50 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 19:58:51 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 19:58:51 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 19:58:51 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 19:58:51 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:58:51 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 19:58:51 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 19:58:51 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 19:58:51 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 19:58:52 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@7bcecef6] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 19:58:52 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10e56da9, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e18ced7, org.springframework.security.web.header.HeaderWriterFilter@8077c97, org.springframework.security.web.csrf.CsrfFilter@482a58c7, org.springframework.security.web.authentication.logout.LogoutFilter@d108406, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a717d79, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4601047, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54c11750, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3407aa4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28cb86b2, org.springframework.security.web.session.SessionManagementFilter@563317c1, org.springframework.security.web.access.ExceptionTranslationFilter@4e5c8ef3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3dea226b]
+2016-08-15 19:58:53 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 19:58:53 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 19:58:53 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 19:58:53 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 19:58:53 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 19:58:53 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 19:58:53 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 19:58:53 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 19:58:48 IST 2016]; root of context hierarchy
+2016-08-15 19:58:53 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 19:58:53 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 19:58:53 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@26994c6a.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471271333823.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 19:58:53 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 5307 ms
+2016-08-15 19:58:54 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 19:58:54 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:58:54 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 19:58:54 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 19:58:54 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 76 ms
+2016-08-15 19:58:58 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:58:58 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 19:59:01 INFO  UserDaoImpl:29 - jaison reached in findUserList
+2016-08-15 20:56:45 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 19:58:54 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 20:56:45 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 19:58:48 IST 2016]; root of context hierarchy
+2016-08-15 20:56:45 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
+2016-08-15 20:56:58 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 20:56:58 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 20:56:58 IST 2016]; root of context hierarchy
+2016-08-15 20:56:58 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 20:56:58 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 20:56:59 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 20:56:59 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 20:56:59 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 20:57:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 20:57:00 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 20:57:00 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 20:57:00 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 20:57:00 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 20:57:00 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 20:57:01 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 20:57:01 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 20:57:01 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 20:57:01 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 20:57:01 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@60aec68a] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 20:57:02 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1182413a, org.springframework.security.web.context.SecurityContextPersistenceFilter@638afcaa, org.springframework.security.web.header.HeaderWriterFilter@394a6d2b, org.springframework.security.web.csrf.CsrfFilter@27358a19, org.springframework.security.web.authentication.logout.LogoutFilter@610fbe1c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5599b5bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62735b13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6eede35e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@919086, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d43a1b7, org.springframework.security.web.session.SessionManagementFilter@55adcf9e, org.springframework.security.web.access.ExceptionTranslationFilter@5c70d7f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51d8f2f2]
+2016-08-15 20:57:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 20:57:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 20:57:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 20:57:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 20:57:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 20:57:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 20:57:02 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 20:57:02 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 20:56:58 IST 2016]; root of context hierarchy
+2016-08-15 20:57:03 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 20:57:03 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 20:57:03 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@671d97bc.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471274823024.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 20:57:03 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 4904 ms
+2016-08-15 20:57:03 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 20:57:03 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 20:57:03 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 20:57:03 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 20:57:03 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 63 ms
+2016-08-15 20:57:07 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 20:57:07 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 21:04:17 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 20:57:03 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 21:04:17 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 20:56:58 IST 2016]; root of context hierarchy
+2016-08-15 21:04:17 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
+2016-08-15 21:04:28 INFO  ContextLoader:305 - Root WebApplicationContext: initialization started
+2016-08-15 21:04:28 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing Root WebApplicationContext: startup date [Mon Aug 15 21:04:28 IST 2016]; root of context hierarchy
+2016-08-15 21:04:29 INFO  AnnotationConfigWebApplicationContext:207 - Registering annotated classes: [class com.springDreamsProj.configuration.HelloWorldConfiguration]
+2016-08-15 21:04:29 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 21:04:30 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-15 21:04:30 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-08-15 21:04:30 INFO  Version:41 - HHH000412: Hibernate Core {4.1.1}
+2016-08-15 21:04:30 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-08-15 21:04:30 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-08-15 21:04:31 INFO  Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-15 21:04:31 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-08-15 21:04:31 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-08-15 21:04:31 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 21:04:31 INFO  UpdateTimestampsCache:62 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2016-08-15 21:04:31 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2016-08-15 21:04:31 INFO  StandardQueryCache:83 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2016-08-15 21:04:31 WARN  AbstractEhcacheRegionFactory:180 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2016-08-15 21:04:32 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@f8a6243] of Hibernate SessionFactory for HibernateTransactionManager
+2016-08-15 21:04:32 INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5546e754, org.springframework.security.web.context.SecurityContextPersistenceFilter@570b2057, org.springframework.security.web.header.HeaderWriterFilter@66a82a13, org.springframework.security.web.csrf.CsrfFilter@5cd8d029, org.springframework.security.web.authentication.logout.LogoutFilter@22da200e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a660b34, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16a6dc21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58164e9a, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6b9697ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ad0bb4e, org.springframework.security.web.session.SessionManagementFilter@11399548, org.springframework.security.web.access.ExceptionTranslationFilter@6eede35e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@647fb583]
+2016-08-15 21:04:33 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.loginPage()
+2016-08-15 21:04:33 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/Access_Denied],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.accessDeniedPage(org.springframework.ui.ModelMap)
+2016-08-15 21:04:33 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.homePage(org.springframework.ui.ModelMap)
+2016-08-15 21:04:33 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.logoutPage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-15 21:04:33 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.adminPage(org.springframework.ui.ModelMap)
+2016-08-15 21:04:33 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/db],methods=[GET]}" onto public java.lang.String com.springDreamsProj.controller.HelloWorldController.dbaPage(org.springframework.ui.ModelMap)
+2016-08-15 21:04:33 INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-15 21:04:33 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 15 21:04:28 IST 2016]; root of context hierarchy
+2016-08-15 21:04:33 INFO  EhCacheManagerFactoryBean:130 - Initializing EhCache CacheManager
+2016-08-15 21:04:33 WARN  CacheManager:568 - One or more caches require a DiskStore but there is no diskStore element configured. Using the default disk store path of /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/. Please explicitly configure the diskStore element in ehcache.xml.
+2016-08-15 21:04:33 WARN  CacheManager:611 - Creating a new instance of CacheManager using the diskStorePath "/var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T/" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$InputStreamConfigurationSource@278fe428.
+The diskStore path for this CacheManager will be set to /var/folders/7g/7flvt31s0hddjd83pmlh_vvw0000gn/T//ehcache_auto_created_1471275273407.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2016-08-15 21:04:33 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 21:04:33 INFO  ContextLoader:345 - Root WebApplicationContext: initialization completed in 4600 ms
+2016-08-15 21:04:33 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcher': initialization started
+2016-08-15 21:04:33 INFO  AnnotationConfigWebApplicationContext:581 - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 21:04:33 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 21:04:33 INFO  AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-15 21:04:33 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcher': initialization completed in 53 ms
+2016-08-15 21:04:35 INFO  UpdateChecker:98 - New update(s) found: 2.4.7 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.4]. Please check http://ehcache.org for the latest version.
+2016-08-15 21:04:44 INFO  UserDaoImpl:29 - jaison reached in findUserList
+2016-08-15 23:46:42 INFO  AnnotationConfigWebApplicationContext:982 - Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Aug 15 21:04:33 IST 2016]; parent: Root WebApplicationContext
+2016-08-15 23:46:43 INFO  AnnotationConfigWebApplicationContext:982 - Closing Root WebApplicationContext: startup date [Mon Aug 15 21:04:28 IST 2016]; root of context hierarchy
+2016-08-15 23:46:44 INFO  EhCacheManagerFactoryBean:187 - Shutting down EhCache CacheManager
